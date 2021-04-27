@@ -1,0 +1,100 @@
+body{
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 300px;
+}
+
+td {
+    background-color: gray;
+    border: 3px solid white;
+    font-size: 80px;
+    color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#grid-container {
+    display: grid;
+    /* grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px; */
+    margin-top: -270px;
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.p1 {
+    margin-top: 5px;
+    position: fixed;
+    padding-left: 20px;
+}
+
+.p2 {
+    float: right;
+    padding-right: 20px;
+}
+
+#turn1,
+#turn2 {
+    display: none;
+}
+
+button {
+    height: 50px;
+    background-color: burlywood;
+    color: darkred;
+    border-radius: 10px;
+}
+
+#winnerContainer {
+    padding: 30px;
+    align-self: center;
+}
+
+
+/* pop ups */
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: pink;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+#box,
+#box1,
+#draw {
+    width: 500px;
+    overflow: hidden;
+    background: burlywood;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#box span,
+#box1 span,
+#draw span {
+    color: hotpink;
+    font-size: 40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#box h1,
+#box1 h1,
+#draw h1 {
+    color: brown 38
+}

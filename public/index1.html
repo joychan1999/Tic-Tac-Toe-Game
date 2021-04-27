@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a71707a89a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TIC_TAC_TOE</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/essenstial-ultimate-ui/64/tic_tac_toe-256.png" type="image/x-icon">
+</head>
+
+<body>
+    <div>
+        <center>
+            <img src="../src/head.png" alt="tic-tac-toe img" height="120" width="500">
+        </center>
+    </div>
+    <div class="p1">
+        <img src="../src/p1.png" alt="player1">
+        <br><br><br>
+        <h1 id="turn1">Your TURN!</h1>
+    </div>
+
+    <div class="p2">
+        <img src="../src/p2.png" alt="player2">
+        <br><br><br>
+        <h1 id="turn2">Your TURN!</h1>
+    </div>
+    <div id="grid-container">
+        <div id="tableBoard">
+        </div>
+    </div>
+    <br>
+    <center>
+        <button id="Restart">
+            <h3>Restart Game</h3>
+        </button>
+    </center>
+
+    <div id="box">
+        <i class="fas fa-check-circle"></i>
+        <h1>CONGRATULATIONS!!</h1><br>
+        <img src="https://cdn2.iconfinder.com/data/icons/business-situations-flat-office-man-life/512/Rewarded-256.png" alt="trophy" style="width: fit-content;">
+        <H2>PLAYER 1 WINS!</H2><br>
+        <h1>Good Job</h1>
+        <button id="Okay" onclick="closeButton()"><h3>Restart Game</h3> </button>
+    </div>
+    <div id="box1">
+        <i class="fas fa-check-circle"></i>
+        <h1>CONGRATULATIONS!!</h1><br>
+        <img src="https://cdn2.iconfinder.com/data/icons/business-situations-flat-office-man-life/512/Rewarded-256.png" alt="trophy" style="width: fit-content;">
+        <H2>PLAYER 2 WINS!</H2><br>
+        <h1>Good Job</h1>
+        <button id="Okay" onclick="closeButton()"><h3>Restart Game</h3> </button>
+    </div>
+    <div id="draw">
+        <i class="fas fa-check-circle"></i>
+        <h1>CONGRATULATIONS!!</h1><br>
+        <img src="https://cdn3.iconfinder.com/data/icons/business-people-40/342/Flat_Blue-09-04-256.png" alt="trophy" style="width: fit-content;">
+        <H2>IT'S A DRAW!</H2><br>
+        <h1>Good Job</h1>
+        <button id="Okay" onclick="closeButton()"><h3>Restart Game</h3> </button>
+    </div>
+
+
+    <script src="./script.js "></script>
+</body>
+
+</html>
